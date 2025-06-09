@@ -6,17 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        detective: ['"Special Elite"', 'cursive'],
+        eczar: ['Eczar', 'serif'],
       },
       colors: {
-        background: '#1C1C1E',      // Charcoal
-        text: '#E5E5E5',             // Light Gray
-        salmon: '#FF6B6B',           // Accent / Buttons
-        border: '#3A3A3C',           // Border
-        highlight: '#FFD60A',        // Link Hover / Highlight
-        alert: '#FF3B30',            // Error / Warning
+        background: '#1C1C1E',
+        text: '#E5E5E5',
+        salmon: '#FF6B6B',
+        border: '#3A3A3C',
+        highlight: '#FFD60A',
+        alert: '#FF3B30',
       },
     },
   },
   plugins: [],
-};
+}

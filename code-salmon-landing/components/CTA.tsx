@@ -24,8 +24,8 @@ export default function CTA() {
   ];
 
   return (
-    <section className="bg-black text-white text-center py-20 px-6">
-      <h2 className="text-3xl font-bold mb-4">Ready to Stop Silent Failures?</h2>
+    <section className="text-white text-center py-20 px-6">
+      <h2 className="text-3xl text-salmon font-bold mb-4">Ready to Stop Silent Failures?</h2>
       <p className="text-lg mb-12 max-w-xl mx-auto">
         Explore the people behind the product and reach out.
       </p>

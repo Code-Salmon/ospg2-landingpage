@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='bg-gray-950 text-gray-400 text-sm py-10 px-6 text-center'>
+   <footer className="text-gray-400 text-sm py-10 px-6 text-center">
       <p>
         &copy; {new Date().getFullYear()}{' '}
         <span className='text-salmon font-semibold'>Code Salmon</span>. All
