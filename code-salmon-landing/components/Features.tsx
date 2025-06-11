@@ -4,7 +4,7 @@ const features = [
     desc: 'Our scanner doesn’t wait for permission. It goes undercover in your TypeScript monorepo, tails every API call, and uncovers structural drifts that others miss.',
   },
   {
-    title: 'Field Testing and Response Decoding',
+    title: 'Response Decoding',
     desc: "Think of it as wiretapping for your endpoints. For each API call we detect, we run a live trace and interrogate the response against your app’s schema. Silent Assassins are exposed and must await trial for their crimes.",
   },
   {
@@ -23,7 +23,7 @@ export default function Features() {
         {features.map((f, index) => (
           <div
             key={f.title}
-            className="relative bg-white text-gray-800 font-subheader border border-gray-300 p-6 rounded-md shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            className="relative bg-white text-gray-800 pl-12 font-subheader border border-gray-300 p-6 shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
           >
             {/* Red margin line (like index card) */}
             <div className="absolute top-0 bottom-0 left-10 w-[2px] bg-red-400 opacity-40 z-0" />
