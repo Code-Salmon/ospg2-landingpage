@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        eczar: ['Eczar', 'serif'],
+        title: ['"Rubber Stamp"', 'serif'],
+        subheader: ['"Special Elite"', 'cursive'],
+        body: ['"DM Sans"', 'sans-serif'],
       },
       colors: {
         background: '#1C1C1E',
@@ -19,4 +21,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
