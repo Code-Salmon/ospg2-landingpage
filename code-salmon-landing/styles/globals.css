@@ -1,9 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+/* styles/globals.css */
+/* Title Font - Rubber Stamp */
+@import url('https://fonts.cdnfonts.com/css/rubber-stamp');
+/* Secondary Header Font - Special Elite */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Special+Elite&display=swap');
+/* Body Font - DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-background text-text font-detective;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
 }
+
+/* ✅ Overlay to darken background for better contrast
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+} */
+
+/* ✅ Optional: Subtle film grain / dusty noise filter
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+} */
+
+
+/* Font Family information
+Rubber Stamp
+@font-face {
+  font-family: "Rubber Stamp";
+  src: url("https://db.onlinewebfonts.com/t/a82c45868abfd37fc1d980147a1a0778.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/a82c45868abfd37fc1d980147a1a0778.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+Special Elite
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+DM Sans
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
