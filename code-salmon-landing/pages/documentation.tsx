@@ -1,15 +1,15 @@
 export default function Documentation() {
   return (
     <div
-      className='relative min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat'
+      className="relative min-h-screen flex items-center justify-center px-4 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/docs-bbg.jpg')" }}
     >
       {/* 🔲 Dark Overlay */}
-      <div className='absolute inset-0 bg-black opacity-25 z-0' />
+      <div className="absolute inset-0 bg-black opacity-25 z-0" />
 
       {/* 🟨 Legal Pad */}
       <div
-        className='relative z-10 pl-20 bg-[#fef3c7] text-gray-900 p-10 shadow-4xl rounded-md border border-gray-300 w-full max-w-7xl h-auto overflow-hidden font-body'
+        className="relative z-10 pl-20 bg-[#fef3c7] text-gray-900 p-10 shadow-4xl rounded-md border border-gray-300 w-full max-w-7xl h-auto overflow-hidden font-body"
         style={{
           backgroundImage: `repeating-linear-gradient(
             to bottom,
@@ -17,93 +17,86 @@ export default function Documentation() {
             transparent 23px,
             rgba(0, 0, 255, 0.15) 24px
           )`,
-          boxShadow: '0px 20px 40px rgba(0, 0, 0, 0.5)', // Custom shadow
+          boxShadow: '0px 20px 40px rgba(0, 0, 0, 0.5)',
         }}
       >
         {/* Red margin line */}
-        <div className='absolute top-0 bottom-0 left-14 w-[2px] bg-red-400 opacity-60 z-0' />
+        <div className="absolute top-0 bottom-0 left-14 w-[2px] bg-red-400 opacity-60 z-0" />
 
         {/* Content */}
-        <div className='relative z-10'>
+        <div className="relative z-10">
           <h1
-            className='text-4xl font-title mb-4 text-salmon'
-            style={{
-              textShadow: '6px 6px 8px rgb(255, 255, 255)',
-            }}
+            className="text-4xl font-title mb-4 text-salmon"
+            style={{ textShadow: '6px 6px 8px rgb(255, 255, 255)' }}
           >
             Code Salmon Documentation
           </h1>
-          <p className='text-lg mb-6'>
-            Welcome to the Code Salmon CLI documentation. Learn how to set up,
-            run scans, and interpret results.
+
+          <p className="text-lg mb-6">
+            A TypeScript backend dev’s most trusted gadget against the dastardly silent assassins known only as REST API Contract Drift.
           </p>
 
-          <h2 className='text-2xl font-semibold mt-8 mb-2 text-salmon'>Link</h2>
-          <pre
-            className='bg-white/60 p-4 rounded-lg text-sm overflow-auto'
-            style={{
-              boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.5)', // Custom shadow
-            }}
-          >
-            <code>npm link</code>
-          </pre>
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">What is Code Salmon?</h2>
+          <p className="mb-4">
+            Code Salmon is a CLI tool that scans TypeScript projects for REST API calls. Once identified, it fires those calls to create a baseline JSON snapshot for future comparisons—your bulletproof vest against silent API drift.
+          </p>
+          <ul className="list-disc ml-6 mb-6">
+            <li>Scan your project's REST API calls</li>
+            <li>Compare results to your original baseline</li>
+            <li>Adjust code to reflect any API changes</li>
+          </ul>
 
-          <h2 className='text-2xl font-semibold mt-8 mb-2 text-salmon'>
-            Basic Usage
-          </h2>
-          <pre
-            className='bg-white/60 p-4 rounded-lg text-sm overflow-auto'
-            style={{
-              boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.5)', // Custom shadow
-            }}
-          >
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">Problem Solved</h2>
+          <p className="mb-4">
+            External APIs evolve. When they do, your application might silently break. Code Salmon stops that by:
+          </p>
+          <ul className="list-disc ml-6 mb-6">
+            <li>Detecting contract drift early</li>
+            <li>Tracking every endpoint you depend on</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">Features</h2>
+          <ul className="list-disc ml-6 mb-6">
+            <li>Scans <code>.ts</code> files for <code>fetch()</code> calls</li>
+            <li>Extracts API URLs and environment keys</li>
+            <li>Fetches and saves baseline responses in JSON</li>
+            <li>Compares future responses to detect structural drift</li>
+            <li>Reports drift directly in the terminal</li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">Configuration Tips</h2>
+          <ul className="list-disc ml-6 mb-6">
+            <li>Ensure a valid <code>.env</code> file exists with relevant API keys</li>
+            <li>Customize scan targets via <code>tsconfig.json</code></li>
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">Installation & Usage</h2>
+          <pre className="bg-white/60 p-4 rounded-lg text-sm overflow-auto mb-2">
+            <code>npm install codesalmon</code>
+          </pre>
+          <p className="mb-2">To generate your initial baseline:</p>
+          <pre className="bg-white/60 p-4 rounded-lg text-sm overflow-auto mb-2">
             <code>scanSalmon</code>
           </pre>
-
-          <h2 className='text-2xl font-semibold mt-8 mb-2 text-salmon'>
-            How It Works
-          </h2>
-          <p>
-            Code Salmon parses your monorepo, identifies REST API calls, sends
-            live test requests, and compares the responses to detect contract
-            drift. Here we are thinking about fishes. We like to watch them swim
-            upstream. What is Lorem Ipsum? Lorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum. Why do we use it? It is a long established fact that a reader
-            will be distracted by the readable content of a page when looking at
-            its layout. The point of using Lorem Ipsum is that it has a
-            more-or-less normal distribution of letters, as opposed to using
-            'Content here, content here', making it look like readable English.
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover many web sites still in their infancy. Various versions
-            have evolved over the years, sometimes by accident, sometimes on
-            purpose (injected humour and the like). Where does it come from?
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32. The standard chunk of
-            Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
+          <p className="mb-2">To check for contract drift later:</p>
+          <pre className="bg-white/60 p-4 rounded-lg text-sm overflow-auto mb-6">
+            <code>swimSalmon</code>
+          </pre>
+          <p className="italic mb-6">
+            *Pro Tip: For meaningful contract drift, wait days or weeks between scans to observe real API changes.*
           </p>
+
+          <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">Contract Drift Report</h2>
+          <p className="mb-4">
+            When you run <code>swimSalmon</code>, the CLI outputs a detailed report highlighting any changes to API responses.
+          </p>
+          <h3 className="text-xl font-semibold mt-4 mb-2">Possible Report Outputs</h3>
+          <ul className="list-disc ml-6 mb-2">
+            <li><strong>Changed at</strong>: Indicates fields with value/type changes</li>
+            <li><strong>Addition at</strong>: Shows where new key/value pairs were added</li>
+            <li><strong>Removed at</strong>: Flags missing fields from the original baseline</li>
+            <li><strong>Unhandled Change Type</strong>: Catches unknown or deeply restructured responses</li>
+          </ul>
         </div>
       </div>
     </div>

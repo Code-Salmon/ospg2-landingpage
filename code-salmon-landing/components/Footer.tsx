@@ -7,14 +7,8 @@ export default function Footer() {
         rights reserved.
       </p>
       <div className='mt-2'>
-        <a href='#' className='underline mx-2 hover:text-salmon'>
+        <a href="https://github.com/OSP-54-2/codesalmon" className='underline mx-2 hover:text-salmon'>
           GitHub
-        </a>
-        <a href='#' className='underline mx-2 hover:text-salmon'>
-          Contact
-        </a>
-        <a href='#' className='underline mx-2 hover:text-salmon'>
-          Privacy
         </a>
       </div>
     </footer>
