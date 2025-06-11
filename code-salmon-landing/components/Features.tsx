@@ -1,15 +1,15 @@
 const features = [
   {
-    title: 'Schema Drift Detection',
-    desc: 'Deep structural diffing of Fetch API responses: no OpenAPI spec needed. It parses your TypeScript monorepo, identifies API usage, and extracts each endpoint call.',
+    title: 'Operation: Drift Recon',
+    desc: 'Our scanner doesn’t wait for permission. It goes undercover in your TypeScript monorepo, tails every API call, and uncovers structural drifts that others miss.',
   },
   {
-    title: 'Automated test requests & response analysis',
-    desc: "For every detected API call, it sends a live test request and compares the actual response to your app's expected structure checking for missing fields, type mismatches, or structural changes.",
+    title: 'Field Testing and Response Decoding',
+    desc: "Think of it as wiretapping for your endpoints. For each API call we detect, we run a live trace and interrogate the response against your app’s schema. Silent Assassins are exposed and must await trial for their crimes.",
   },
   {
-    title: 'Contract drift alerting',
-    desc: 'When it finds discrepancies between expected and actual API responses, it flags them. Helping you catch upstream contract changes early and avoid runtime surprises.',
+    title: 'Intel Breach Detection',
+    desc: 'We keep a close tail on every contract. If the response strays from the script, our scanners light up and drop an alert. No bad actors reach production on our watch.',
   },
 ];
 
@@ -17,7 +17,7 @@ export default function Features() {
   return (
     <section className="text-text py-20 px-6 font-body">
       <h2 className="text-3xl font-bold font-subheader text-center mb-12 text-white">
-        Capabilities
+        Spec Ops Toolkit
       </h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {features.map((f, index) => (

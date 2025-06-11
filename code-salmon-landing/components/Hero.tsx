@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="text-text text-center py-12 px-6">
       <h1 className="text-[10rem] font-title mb-4 text-salmon text-red-450">CODE SALMON</h1>
       <p className="text-[1.7rem] font-subheader mb-6 max-w-1xl mx-auto">
-        Investigate contract drift before it escapes into production.
+      A Typescript Backend Senior Dev's trusted gadget against Rest API Contract Drift!
       </p>
       <div className="flex justify-center gap-4">
         <a

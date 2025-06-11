@@ -2,22 +2,16 @@
 export default function CTA() {
   const team = [
     {
-      name: 'Marin Minamiya',
-      role: 'Full Stack Software Engineer',
-      image: 'images/Marin.JPG',
-      linkedin: 'https://www.linkedin.com/in/marin-minamiya/',
-    },
-    {
-      name: 'Jamie Tait',
-      role: 'Full Stack Software Engineer',
-      image: '/images/jamie.png',
-      linkedin: 'ttps://www.linkedin.com/in/jamiejtait/',
-    },
-    {
       name: 'Everett Merrill',
       role: 'Full Stack Software Engineer',
       image: '/images/everett.png',
       linkedin: 'https://www.linkedin.com/in/everett-merrill/',
+    },
+    {
+      name: 'Marin Minamiya',
+      role: 'Full Stack Software Engineer',
+      image: 'images/Marin.JPG',
+      linkedin: 'https://www.linkedin.com/in/marin-minamiya/',
     },
     {
       name: 'Anne Salim',
@@ -25,15 +19,21 @@ export default function CTA() {
       image: '/images/anne.png',
       linkedin: 'https://www.linkedin.com/in/annesalim/',
     },
+    {
+      name: 'Jamie Tait',
+      role: 'Full Stack Software Engineer',
+      image: '/images/jamie.png',
+      linkedin: 'ttps://www.linkedin.com/in/jamiejtait/',
+    },
   ];
 
   return (
     <section className='text-white text-center py-20 px-6'>
       <h2 className='text-3xl text-salmon font-subheader font-bold mb-4'>
-        Ready to Stop Silent Failures?
+        Prevent Silent Assassins from Killing your API Responses!
       </h2>
       <p className='text-lg mb-12 font-subheader max-w-xl mx-auto'>
-        Explore the people behind the product and reach out.
+        CLI Gadget Creators:
       </p>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto'>
         {team.map((person) => (
