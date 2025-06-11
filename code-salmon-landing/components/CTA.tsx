@@ -10,18 +10,20 @@ export default function CTA() {
     {
       name: 'Jamie Tait',
       role: 'Full Stack Software Engineer',
-      image: '/images/alex.jpeg',
+      image: '/images/jamie.png',
+      linkedin: 'ttps://www.linkedin.com/in/jamiejtait/',
     },
     {
       name: 'Everett Merrill',
       role: 'Full Stack Software Engineer',
-      image: '/images/sarah.jpeg',
+      image: '/images/everett.png',
       linkedin: 'https://www.linkedin.com/in/everett-merrill/',
     },
     {
       name: 'Anne Salim',
       role: 'Full Stack Software Engineer',
-      image: '/images/david.jpeg',
+      image: '/images/anne.png',
+      linkedin: 'https://www.linkedin.com/in/annesalim/',
     },
   ];
 
