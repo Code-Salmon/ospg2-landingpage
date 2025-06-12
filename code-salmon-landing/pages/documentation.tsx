@@ -31,11 +31,20 @@ export default function Documentation() {
           >
             Code Salmon Documentation
           </h1>
-
+          <div className="mt-12">
+        </div>
           <p className="text-lg mb-6">
             A TypeScript backend dev’s most trusted gadget against the dastardly silent assassins known only as REST API Contract Drift.
           </p>
-
+          <iframe
+            className="w-full max-w-5xl mx-auto rounded-md shadow-lg"
+            width="700"
+            height="450"
+            src="https://www.youtube.com/embed/ErDjcF6EH84"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
           <h2 className="text-2xl font-semibold mt-8 mb-2 text-salmon">What is Code Salmon?</h2>
           <p className="mb-4">
             Code Salmon is a CLI tool that scans TypeScript projects for REST API calls. Once identified, it fires those calls to create a baseline JSON snapshot for future comparisons—your bulletproof vest against silent API drift.
