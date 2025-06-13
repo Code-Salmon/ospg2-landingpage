@@ -1,7 +1,8 @@
 // pages/_app.tsx
 import '../styles/globals.css';
+import { AppProps } from 'next/app'
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps } : AppProps) {
   return (
 <div
   className="relative min-h-screen bg-scroll bg-cover bg-top bg-center text-[#E5E5E5]"
